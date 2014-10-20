@@ -8,7 +8,7 @@ permalink: /ruby/
 [image]: https://registry.hub.docker.com/_/ruby/
 [vendor everything]: http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/
 
-Recommended image: [The Official Docker Image][image].
+**Recommended image:** [The Official Docker Image][image].
 
 The official image is as good as its going to get. It's not small by
 any means (~800 Mb) but it will cover most project's use cases. It's
@@ -34,22 +34,18 @@ discussions around this topic.
 
 Here's an example `Dockerfile`
 
-```
-FROM ruby:2.1.3
+    FROM ruby:2.1.3
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+    RUN mkdir -p /usr/src/app
+    WORKDIR /usr/src/app
 
-ADD Gemfile /usr/src/app/
-ADD Gemfile.lock /usr/src/app/
-ADD vendor/ /usr/src/app/vendor
-RUN bundle install --system --local
+    ADD Gemfile /usr/src/app/
+    ADD Gemfile.lock /usr/src/app/
+    ADD vendor/ /usr/src/app/vendor
+    RUN bundle install --system --local
 
-ADD . /usr/src/app
-```
+    ADD . /usr/src/app
 
 Now generate the `Gemfile.lock` and `vendor/cache`:
 
-```
-$ docker run --rm -it $(pwd):/data ruby bundle package --gemfile /data/Gemfile
-```
+    $ docker run --rm -it $(pwd):/data ruby bundle package --gemfile /data/Gemfile
