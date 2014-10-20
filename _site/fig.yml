@@ -1,7 +1,0 @@
-site:
-  image: dockerbuild/jekyll
-  command: jekyll serve --port 9292 --force_polling
-  volumes: 
-    - .:/data
-  ports:
-    - 9292:9292
