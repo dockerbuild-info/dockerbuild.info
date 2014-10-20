@@ -49,3 +49,8 @@ Here's an example `Dockerfile`
 Now generate the `Gemfile.lock` and `vendor/cache`:
 
     $ docker run --rm -it $(pwd):/data ruby:2.1.3 bundle package --gemfile /data/Gemfile
+
+This will generate the fils in the current directory. Heads up though,
+you may need to `chown` these files since `bundle package` is ran as
+root and will write files as that user. This depends on your host
+system and filesystem.
