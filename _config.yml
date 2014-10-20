@@ -1,0 +1,15 @@
+# Site settings
+title: DockerBuild.info
+email: adam@dockerbuild.info
+description: > # this means to ignore newlines until "baseurl:"
+  The best practices and useful information around the emerging art
+  of building and shipping docker images.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://dockerbuild.info" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+exclude: [ Vagrantfile, dockerfiles, tmp, vagrant, fig.sh, doc ]
+
+# Build settings
+markdown: kramdown
