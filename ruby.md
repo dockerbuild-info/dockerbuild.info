@@ -48,4 +48,4 @@ Here's an example `Dockerfile`
 
 Now generate the `Gemfile.lock` and `vendor/cache`:
 
-    $ docker run --rm -it $(pwd):/data ruby bundle package --gemfile /data/Gemfile
+    $ docker run --rm -it $(pwd):/data ruby:2.1.3 bundle package --gemfile /data/Gemfile
