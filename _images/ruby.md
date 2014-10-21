@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Ruby Images
-permalink: /ruby/
+title: Ruby
 ---
 
 [onbuild]: https://docs.docker.com/reference/builder/#onbuild

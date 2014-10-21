@@ -13,3 +13,9 @@ exclude: [ Vagrantfile, dockerfiles, tmp, vagrant, fig.sh, doc ]
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  images:
+    output: true
+    permalink: /:path/
