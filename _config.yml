@@ -19,3 +19,5 @@ collections:
   images:
     output: true
     permalink: /:path/
+  links:
+    output: false
