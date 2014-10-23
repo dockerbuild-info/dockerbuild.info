@@ -4,6 +4,15 @@ layout: default
 
 <div class="home">
   <p class="text">{{ site.description }}</p>
+  <p class="text">
+    Not sure what this site's about? Check out the 
+    <a href="{% post_url 2014-10-24-introduction %}">introduction</a> for
+    more information. Or look below for helpful information on
+    building docker images for your project, links to informative
+    articles and information, and high quality blog posts on
+    everything related to <code>docker build</code> and <code>docker
+    run</code>.
+  </p>
 
   <h1 class="page-heading">Image Guides</h1>
 
@@ -12,6 +21,20 @@ layout: default
     {% for post in images %}
       <li>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">Blog</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
       </li>
     {% endfor %}
   </ul>
@@ -26,23 +49,9 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
         </h2>
+
+        {{ post.content }}
       </li>
     {% endfor %}
   </ul>
-
-  <h1 class="page-heading">Blog</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>

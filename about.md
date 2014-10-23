@@ -4,8 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This website is all about docker and the processed around it. It's
+maintained by me, [Adam Hawkins](http://hawkins.io).
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I'm a software development turned passionate system architect and team
+lead. My primary goal is build well designed systems and docker is a
+key tool in doing that. Read more about this website in the [introduction][].
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+[introduction]: {% post_url 2014-10-24-introduction %}
