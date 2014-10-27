@@ -11,4 +11,4 @@ I'm a software development turned passionate system architect and team
 lead. My primary goal is build well designed systems and docker is a
 key tool in doing that. Read more about this website in the [introduction][].
 
-[introduction]: {% post_url 2014-10-24-introduction %}
+[introduction]: {% post_url 2014-10-25-introduction %}

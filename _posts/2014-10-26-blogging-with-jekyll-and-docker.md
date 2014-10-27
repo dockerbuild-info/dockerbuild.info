@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Blogging with Jekyll & Docker"
-date:   2014-10-24
 ---
 
 I'v been moving as much software development into virtual machines and

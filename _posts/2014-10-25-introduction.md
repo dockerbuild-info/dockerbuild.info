@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Introducing this Website"
-date:   2014-10-24
 ---
 
 Hello and welcome to my new website! This website is all about docker
@@ -55,5 +54,5 @@ links and write image guides--spread the knowledge around.
 
 -- Adam Hawkins, Editor
 
-[project template]: {% post_url 2014-10-23-development-environments %}
+[project template]: {% post_url 2014-10-27-development-environments %}
 [ruby image guide]: /ruby

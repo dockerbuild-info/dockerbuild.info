@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Development Environments with Docker & Vagrant"
-date:   2014-10-23
 ---
 
 I've been developing software for a while mostly all web related
@@ -74,5 +73,5 @@ should support simple and complex project. I'd love feed back on it so
 it can be improved. Check out the [rationale][] for more information
 behind it.
 
-[template]: https://github.com/ahawkins/project-template
-[Rationale]: https://github.com/ahawkins/project-template/blob/master/doc/RATIONALE.md
+[template]: https://github.com/ahawkins/docker-project-template
+[Rationale]: https://github.com/ahawkins/docker-project-template/blob/master/doc/RATIONALE.md
