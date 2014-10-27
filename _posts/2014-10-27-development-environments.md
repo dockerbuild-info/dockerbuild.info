@@ -5,17 +5,17 @@ title:  "Development Environments with Docker & Vagrant"
 
 I've been developing software for a while mostly all web related
 things (JavaScript, Ruby etc). My development process has been install
-homebrew, install neeeded libraries & services, then install rbenv.
+homebrew, install needed libraries & services, then install rbenv.
 Next install rubies and various other things. Next clone repos,
 install gems, and get to work. Eventually this started to breakdown in
-many annoying ways. Certian libraries in some projects could not be
+many annoying ways. Certain libraries in some projects could not be
 updated because of C dependencies. Requiring newer versions of
 Elasticsearch which in turn requires Java 7, but not wanting to
 upgrade for various other things. Then I started working in a
-development team and those problems multipled by the number of people
+development team and those problems multiplied by the number of people
 in the team. I think everyone gets bit by this problem eventually.
 Your development environment becomes more complicated and there hidden
-depenndencies, the process is not documented, and things flowly erode
+dependencies, the process is not documented, and things slowly erode
 over time. It was easy for me to realize I'd been doing it wrong for
 _years_.
 
@@ -23,13 +23,13 @@ Then Docker came onto the scene. It wasn't a revolutionary idea but it
 is a developer friendly implementation and thusly its caught on like
 wildfire. Docker has a tremendous upside: standardized deployment
 interface and parity between development and production. Starting a
-few months ago I decided (professionally and presonally) and I be
+few months ago I decided (professionally and personally) and I be
 docker native from that point forward. That means doing all
 development tasks with docker images and making docker images project
 deliverables. That was only one step of the process.
 
 The problem with manually created environments is that they are not
-protable and will erode over time. They're also not portable to do
+portable and will erode over time. They're also not portable to do
 different machines (people run different operating systems you know).
 Essentially, they are dependent on the host system. This is also not
 acceptable. In addition to going docker native, I wanted something
@@ -48,7 +48,7 @@ complete parity between environments across all parts of the software
 development process.
 
 I wrote this post to explain some of these issues but also as a
-statement that I care deeply about the sotware development process and
+statement that I care deeply about the software development process and
 how it can be improved. I think there are many people and teams facing
 the same problems. Here are my requirements:
 

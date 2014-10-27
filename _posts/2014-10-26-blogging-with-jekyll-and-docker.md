@@ -8,9 +8,9 @@ docker. I moved some of my ruby libraries into docker. Eventually I
 needed to move my blog into docker. All my blogs and other static
 sites are written using [jekyll][]. Jekyll is great for generating
 static sites. It has one serious downside: it's distributed as a ruby
-gems. Rubygems (and any other packaging system for an interperted
+gems. Rubygems (and any other packaging system for an interpreted
 language) buts a burden on the consumer to maintain that stack on
-their computer. These stacks (ruby in praticular) can be quite
+their computer. These stacks (ruby in particular) can be quite
 finicky. Luckily, we have docker! It's straight forward to build an
 image that mimics the jekyll executable.
 
@@ -36,7 +36,7 @@ Start off by creating a simple `Dockerfile`.
 Heads up! The `therubyracer` is not an explicit dependency. Jekyll
 lists coffeescript as a dependency. That library requires _a_
 javascript runtime (yes), but the runtime depends on the host and
-other factors which cannot be listed in the gemspec. So inshort,
+other factors which cannot be listed in the gemspec. So in short,
 `therubyracer` must be installed to use jeklly in docker even if you
 do not intended to write coffeescript.
 
@@ -58,7 +58,7 @@ Now you can write posts and generate the site using the same approach.
 
     $ docker run -v $(pwd):/data jekyll jekyll build
 
-Voilla! Now `_site` contains a publisable website! Only one more thing
+Voilla! Now `_site` contains a publishable website! Only one more thing
 to do: setup the previewing container. I manage all persistent
 containers with [fig][]. Create `fig.yml` to launch the jekyll image
 with the `serve` command with `pwd` as a data volume.
@@ -74,7 +74,7 @@ with the `serve` command with `pwd` as a data volume.
 It's not mandatory, but I prefer to use explicit ports (for commands
 that accept it) so port mapping is obvious. Otherwise the reader must
 know a command's default ports. `--force_polling` is required for live
-updates. I could not get the native filesystem even things to work and
+updates. I could not get the native file system even things to work and
 `--force_polling` worked well enough. Now hit port 9292 on your docker
 host and your site is waiting for you.
 
